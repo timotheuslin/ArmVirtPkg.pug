@@ -2,7 +2,7 @@
 Build ArmVirtPkg using iPug
 
 ## Prerequisites:
-1. Python 2.7.10+ or Python 3.7.0+
+1. ~~Python 2.7.10+ or~~ Python 3.6.0+
 2. git 2.19.0+
 
 
@@ -26,7 +26,7 @@ Build ArmVirtPkg using iPug
 1. Debian-Based Linux:
     - `sudo apt update`
     - `sudo apt install nasm iasl build-essential uuid-dev gcc-aarch64-linux-gnu`
-    - `pip install ipug --user'`
+    - `pip install ipug --user`
 
 
 ## Build:
