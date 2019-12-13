@@ -2,18 +2,17 @@
 Build ArmVirtPkg using iPug
 
 ## Prerequisites:
-1. ~~Python 2.7.10+ or~~ Python 3.6.0+
-2. git 2.19.0+
+1. Python 3.6+
+2. git 2.17+
 
 
 ## Generic prerequisites for the UDK build:
-1. nasm (2.0 or above)
-2. iasl (version 2018xxxx or newer)
-3. MSVC(Windows) or Xcode(Mac) or GCC(Open-source Posix)
+1. nasm 2.13+
+2. iasl 20180105+
+3. GCC(Open-source Posix) ~~or MSVC(Windows) or Xcode(Mac)~~
 4. build-essential uuid-dev (Posix)
-5. pip2 install future (Python 2.7.x)
-6. motc (Xcode)
-7. iPug (a Python package, installed through pip)
+5. ~~motc (Xcode)~~
+6. iPug (a Python package, installed through pip)
 0. Reference:
     - [Getting Started with EDK II](https://github.com/tianocore/tianocore.github.io/wiki/Getting%20Started%20with%20EDK%20II) 
     - [Xcode](https://github.com/tianocore/tianocore.github.io/wiki/Xcode)
@@ -25,8 +24,9 @@ Build ArmVirtPkg using iPug
 ## Tool installation
 1. Debian-Based Linux:
     - `sudo apt update`
+    - `sudo apt install python3-pip` (optional)
     - `sudo apt install nasm iasl build-essential uuid-dev gcc-aarch64-linux-gnu`
-    - `pip install ipug --user`
+    - `python3 -m pip install ipug --user --upgrade`
 
 
 ## Build:
